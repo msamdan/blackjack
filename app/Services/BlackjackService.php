@@ -33,7 +33,6 @@ class BlackjackService
         $this->game->state->delay = (int)$params['delay'];
 
         $this->saveState();
-
         $data = $this->prepareResponseState();
 
         return $this->setResponse(200, 'success', $data);
@@ -90,7 +89,6 @@ class BlackjackService
 
             $this->game->checkWinner();
             $this->saveState();
-
             $data = $this->prepareResponseState();
 
             return $this->setResponse(200, 'success', $data);
