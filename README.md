@@ -73,7 +73,7 @@ App\Classes\Dealer
 
 Deck class controls deck actions and properties. 
 ```
-App\Classes\Deck
+App\Classes\Card
 ```
 
 Represents game card... 
