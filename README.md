@@ -68,7 +68,7 @@ App\Classes\Player
 
 Extens from Participant class. Represents a dealer. Contains dealder specific methods and properties...
 ```
-App\Classes\Player
+App\Classes\Dealer
 ```
 
 Deck class controls deck actions and properties. 
