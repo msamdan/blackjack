@@ -31,4 +31,4 @@ services:
 networks:
   app-network:
     driver: bridge
-    name: blackjack
+    name: blackjacknetw
