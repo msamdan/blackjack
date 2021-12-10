@@ -35,7 +35,7 @@ Type   URL            Params                          Description
 GET    /              payload: {}                     Returns application ui static content 
 GET    /state         payload: {}                     Returns current game state
 POST   /start-game    payload: {userName, delay}      Starts a game
-POST   /hit           payload: {}                     Hits a card from deck for player or dealer
+POST   /hit           payload: {type}                     Hits a card from deck for player or dealer
 POST   /stay          payload: {}                     Trigger player "stay" action
 ```
 
@@ -76,12 +76,12 @@ App\Classes\Dealer
 
 Deck class controls deck actions and properties. 
 ```
-App\Classes\Card
+App\Classes\Deck
 ```
 
 Represents game card... 
 ```
-App\Classes\Deck
+App\Classes\Card
 ```
 
 ###UI
