@@ -31,4 +31,4 @@ services:
 networks:
   app-network:
     driver: bridge
-    name: iso50001
+    name: blackjack
