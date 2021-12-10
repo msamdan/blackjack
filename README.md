@@ -19,6 +19,9 @@ docker exec blackjack-fpm rm -rf composer-setup.php
 
 ```sh
 docker exec blackjack-fpm composer install
+docker exec blackjack-fpm cp .env.example .env
+docker exec blackjack-fpm php artisan key:generate
+docker exec blackjack-fpm chown -R www-data:www-data storage
 ```
  
 PROJECT DETAILS
