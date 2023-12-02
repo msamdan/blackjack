@@ -1,6 +1,6 @@
 # BLACKJACK APP
 
-INSTALLATION
+## INSTALLATION
 
 STEP-1
 Start the containers in detached mode:
@@ -24,12 +24,12 @@ docker exec blackjack-fpm php artisan key:generate
 docker exec blackjack-fpm chown -R www-data:www-data storage
 ```
  
-PROJECT DETAILS
+## PROJECT DETAILS
 
 Blackjack is a card game where the player(you) need to beat the dealer by getting closer to 21 higher than the dealer without exceeding 21.
 In this project developed a blackjack app with laravel framework...
 
-### API:
+## API:
 ```html
 Type   URL            Params                          Description  
 GET    /              payload: {}                     Returns application ui static content 
@@ -39,18 +39,18 @@ POST   /hit           payload: {type}                     Hits a card from deck 
 POST   /stay          payload: {}                     Trigger player "stay" action
 ```
 
-###Controller:
+## Controller:
 Receives API requests (Player actions) and calls the required services... 
 ```
 App\Http\Controllers\BlackjackController
 ```
-###Service:
+## Service:
 Blackjack runner, manages game ( Player and Dealer Actions, Session, Response etc. )
 ```
 App\Http\Services\BlackjackService
 ```
 
-###Classes:
+## Classes:
 
 Game class. Blackjack service uses game class for create and manage game. Blackjack has several properties and methods
 ( such as player, dealer, deck, etc... class properties and game control methods such as new, checkWinner, clearHands, etc... )
@@ -84,13 +84,13 @@ Represents game card...
 App\Classes\Card
 ```
 
-###UI
+## UI
 Controls ui elements...
 ```
 public\js\blackjack.js
 ```
 
-###Rules:
+## Rules:
 - The game has 6 decks of 52 classic playing cards (312 cards total).
 - Goal: Get closer to 21 than the dealer without going over 21.
 - If a player exceeds 21 he busts and it means that player loses the round.
