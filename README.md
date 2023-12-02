@@ -29,7 +29,7 @@ PROJECT DETAILS
 Blackjack is a card game where the player(you) need to beat the dealer by getting closer to 21 higher than the dealer without exceeding 21.
 In this project developed a blackjack app with laravel framework...
 
-###API:
+### API:
 ```html
 Type   URL            Params                          Description  
 GET    /              payload: {}                     Returns application ui static content 
